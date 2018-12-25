@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let message = "hello, Git!"
 
     override func viewDidLoad() {
         super.viewDidLoad()
