@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class RecordSoundsViewController: UIViewController {
+class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     var audioRecorder: AVAudioRecorder!
 
@@ -45,12 +45,18 @@ class RecordSoundsViewController: UIViewController {
         let filePath = URL(string: urlString!)
         print(filePath!)
         
+//        let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory,.userDomainMask, true)[0] as String
+//        let recordingName = "recordedVoice.wav"
+//        let pathArray = [dirPath, recordingName]
+//        let filePath = URL(string: pathArray.joined(separator: "/"))
+        
 
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
         
         try! audioRecorder = AVAudioRecorder(url: filePath!, settings: [:])
+        audioRecorder.delegate = self
         audioRecorder.isMeteringEnabled = true
         audioRecorder.prepareToRecord()
         audioRecorder.record()
@@ -64,6 +70,9 @@ class RecordSoundsViewController: UIViewController {
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
     }
+    
+    
+    
     
     
     
