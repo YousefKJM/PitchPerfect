@@ -42,9 +42,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Developed by YousefKJM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4A-Mv-EQI">
-                                <rect key="frame" x="109" y="695" width="196" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by YousefKJM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4A-Mv-EQI">
+                                <rect key="frame" x="109" y="639.66666666666663" width="196" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,9 +51,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="R4A-Mv-EQI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="583-ht-d9I"/>
                             <constraint firstItem="Jcf-yu-1ZQ" firstAttribute="top" secondItem="srp-M8-hE9" secondAttribute="bottom" constant="20" id="NIR-wT-d3R"/>
                             <constraint firstItem="srp-M8-hE9" firstAttribute="top" secondItem="Lzs-Rk-mMO" secondAttribute="bottom" constant="28.5" id="R4X-Rf-VJ5"/>
                             <constraint firstItem="srp-M8-hE9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UpG-Mb-G4o"/>
+                            <constraint firstItem="R4A-Mv-EQI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="250" id="fGA-pq-AMr"/>
                             <constraint firstItem="Lzs-Rk-mMO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJO-Zf-XS6"/>
                             <constraint firstItem="Jcf-yu-1ZQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ilT-Li-03Z"/>
                             <constraint firstItem="srp-M8-hE9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="shX-uS-vGw"/>

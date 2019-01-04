@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
-
+    
     // MARK: IBOutlets
     
     @IBOutlet weak var recordLabel: UILabel!
@@ -32,7 +32,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         stopButton.isEnabled = recording
         recordLabel.text = recording ? "Recording.." : "Tap To Record"
     }
-
+    
     // MARK: IBActions
     
     @IBAction func startRecording(_ sender: Any) {
@@ -42,8 +42,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         let recordingName = "recordedVoice.wav"
         let pathArray = [dirPath, recordingName]
         let filePath = NSURL.fileURL(withPathComponents: pathArray)!
-        print(filePath)
-
+        
         
         let session = AVAudioSession.sharedInstance()
         try! session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: AVAudioSession.CategoryOptions.defaultToSpeaker)
@@ -54,7 +53,7 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.prepareToRecord()
         audioRecorder.record()
         
-
+        
     }
     
     @IBAction func stopRecording(_ sender: Any) {
@@ -93,5 +92,5 @@ class RecordSoundViewController: UIViewController, AVAudioRecorderDelegate {
 
 // Helper function inserted by Swift 4.2 migrator.
 fileprivate func convertFromAVAudioSessionCategory(_ input: AVAudioSession.Category) -> String {
-	return input.rawValue
+    return input.rawValue
 }

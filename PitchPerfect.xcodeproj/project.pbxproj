@@ -14,6 +14,9 @@
 		A75D6EE221DF42DE00210198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75D6EE121DF42DD00210198 /* Assets.xcassets */; };
 		A75D6EE721DF434C00210198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75D6EE521DF434C00210198 /* LaunchScreen.storyboard */; };
 		A75D6EE821DF434C00210198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A75D6EE621DF434C00210198 /* Main.storyboard */; };
+		A75D6EEB21DF757500210198 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75D6EEA21DF757500210198 /* UIKit.framework */; };
+		A75D6EED21DF757B00210198 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75D6EEC21DF757B00210198 /* AVFoundation.framework */; };
+		A75D6EEF21DF758E00210198 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75D6EEE21DF758E00210198 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		A75D6EE121DF42DD00210198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A75D6EE521DF434C00210198 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A75D6EE621DF434C00210198 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A75D6EEA21DF757500210198 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A75D6EEC21DF757B00210198 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A75D6EEE21DF758E00210198 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75D6EEF21DF758E00210198 /* Foundation.framework in Frameworks */,
+				A75D6EED21DF757B00210198 /* AVFoundation.framework in Frameworks */,
+				A75D6EEB21DF757500210198 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				A727B5EA21D063450014DE8F /* PitchPerfect */,
 				A727B5E921D063450014DE8F /* Products */,
+				A75D6EE921DF757400210198 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +78,16 @@
 				A727B5F721D063450014DE8F /* Info.plist */,
 			);
 			path = PitchPerfect;
+			sourceTree = "<group>";
+		};
+		A75D6EE921DF757400210198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A75D6EEE21DF758E00210198 /* Foundation.framework */,
+				A75D6EEC21DF757B00210198 /* AVFoundation.framework */,
+				A75D6EEA21DF757500210198 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +229,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -263,6 +284,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -274,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WASE6JY4UC;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WASE6JY4UC;
 				INFOPLIST_FILE = PitchPerfect/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

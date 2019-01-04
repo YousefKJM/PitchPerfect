@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 class PlaySoundViewController: UIViewController {
-
+    
     // MARK: Outlets
     
     @IBOutlet weak var snailButton: UIButton!
@@ -46,7 +46,7 @@ class PlaySoundViewController: UIViewController {
         reverbButton.imageView?.contentMode = .scaleAspectFit
         stopButton.imageView?.contentMode = .scaleAspectFit
     }
-
+    
     // MARK: Actions
     
     @IBAction func playSoundForButton(_ sender: UIButton) {
